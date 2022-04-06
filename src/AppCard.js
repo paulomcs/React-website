@@ -4,7 +4,7 @@ import Header from "./components/HeaderMain.js"
 import Footer from "./components/Footer.js"
 import { Link, useParams, useLocation } from "react-router-dom";
 
-export default function AppCard(props){ //É necessario pois é referente a paguina de cada card
+export default function AppCard(props){ 
 
     const {type} = useParams()
     console.log(type)
