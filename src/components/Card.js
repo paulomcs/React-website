@@ -1,4 +1,5 @@
 import React, { useEffect } from "react"
+import { Link, useParams, useLocation } from "react-router-dom";
 import pic from "../images/empty.png"
 import c00 from "../images/0-anos.png"
 import c10 from "../images/10-anos.png"
@@ -33,20 +34,38 @@ export default function Card(props){
             break;
     }
 
+    let route = "/AppCard/"
+    //route += props["nome"]+";"+props["categoria"]+";"+props["duracao"]+";"+props["classificacao"]
+
     return(
         <div className="movie">
-            <img src={pic} href="https://google.com"/>
-            <h3>{props["nome"]}</h3>
+            <img src={pic} href=""/>
+            <h3>{props.nome}</h3>
             <div className="info-group">
-                <p>Genero: {props["categoria"]}</p>
+                <p>Genero: {props.categoria}</p>
             </div>
+
             <div className="info-group">
-                <img src={foto} />
                 <p>Classificacao indicativa</p>
+                <img src={foto} />
             </div>
+
             <div className="info-group">
-                <p>Duracao: {props["duracao"]}minutos</p>
+                <p>Duracao: {props.duracao}minutos</p>
             </div>
+
+            <div className="info-button">
+                <Link to={{
+                    pathname: "/AppCard/a", 
+                    state: {stateParam: true} 
+                }}
+                ><button>Comprar</button></Link>
+            </div>
+            
         </div>
     )
 }
+//<Link to="/AppCard"
+//params={{ nome: props.nome, categoria: props.categoria, duracao: props.duracao, classificacao: props.classificacao }}
+//><button>Comprar</button></Link>
+//to={{ path: "/step2", state: { nationality: "Icelandic" } }}

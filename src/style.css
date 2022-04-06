@@ -1,58 +1,9 @@
-/*
-body{
-    padding:0;
-    margin:0;
-}
-
-.nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: D6D6D6;
-    box-shadow: 0px 3px 7.5px rgba(0,0,0,0.3);
-}
-
-.nav-items{
-    list-style: none;
-    display: flex;
-}
-
-.nav-items > li{
-    padding: 10px;
-    color: white;
-    margin: 10px
-}
-
-.nav-logo{
-    width: 60px;
-    margin: 10px;
-    border-radius: 100%;
-}
-
-.card {
-    width: 175px;
-    font-size: 12px;
-}
-
-.card-image{
-    width:100%;
-    border-radius: 9px;
-}
-
-.card-stats{
-    display: flex;
-    align-items: center;
-}
-*/
 
 * {
     box-sizing: border-box;
 }
 
 body {
-    /*margin: 0;
-    min-height: 100vh;
-    display: flex;*/
     align-items: center;
     font-family: 'Inter', sans-serif;
     background-color: whitesmoke;
@@ -124,4 +75,36 @@ body {
     text-align: center;
     background-color: #a6deff;
     color: white;
+}
+
+.movie button{
+    margin-top: 10px;
+    border-radius: 20px;
+    width: 50%;
+    background-color: #2B283A;
+    color: aliceblue;
+    font-family: inherit;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+
+    
+}
+.movies-container-AppCard{
+
+    justify-content: center;
+    margin-top: 6%;
+    width: 600px;
+    height: 200px;
+    margin-left: 35%;
+
+}
+
+.info-button{
+    text-align: center;
+}
+
+.info-group img{
+    padding-left: 5px;
 }

@@ -1,11 +1,12 @@
 import React from "react"
 import {Navbar, Nav, Container, Form, FormControl, Button} from "react-bootstrap"
+import { Link } from "react-router-dom";
 
 export default function Header(){
   return(
     <Navbar expand="lg" className="nav">
       <Container fluid className="">
-        <Navbar.Brand href="#">Suyfi</Navbar.Brand>
+        <Navbar.Brand href="#"><Link to="/">Suyfi</Link></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Form className="d-flex justify-content-between">
           <FormControl
@@ -14,7 +15,7 @@ export default function Header(){
             className="me-2"
             aria-label="Search"
           />
-          <Button variant="outline-success">Search</Button>
+          <Button variant="primary">Pesquisar</Button>
         </Form>
         <Nav
           className="my-2 my-lg-0 d-flex justify-content-end"
