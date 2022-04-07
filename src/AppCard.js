@@ -2,7 +2,7 @@ import React from "react";
 import Card from "./components/Card";
 import Header from "./components/HeaderMain.js"
 import Footer from "./components/Footer.js"
-import { Link, useParams, useLocation } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 export default function AppCard(props){
     const {type} = useParams()
