@@ -45,7 +45,7 @@ export default function AppCard(props){
     ]
     let filme;
     for(let i = 0; i < filmes.length; i++){
-        if (filmes[i].id == type){
+        if (filmes[i].id === type){
             filme = filmes[i]
             break
         }
