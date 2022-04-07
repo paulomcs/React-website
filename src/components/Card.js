@@ -36,7 +36,7 @@ export default function Card(props){
 
     return(
         <div className="movie">
-            <img src={pic} href=""/>
+            <img src={pic} alt=""/>
             <h3>{props.nome}</h3>
             <div className="info-group">
                 <p>Genero: {props.categoria}</p>
@@ -44,7 +44,7 @@ export default function Card(props){
 
             <div className="info-group">
                 <p>Classificacao indicativa</p>
-                <img src={foto} />
+                <img src={foto} alt=""/>
             </div>
 
             <div className="info-group">
