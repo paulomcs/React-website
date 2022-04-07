@@ -5,7 +5,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "./style.css"
 import {BrowserRouter,Routes,Route} from "react-router-dom";
 import AppCard from "./AppCard.js"
-import Card from "./components/Card.js"
 
 
 ReactDOM.render(
