@@ -1,5 +1,5 @@
-import React, { useEffect } from "react"
-import { Link, useParams, useLocation } from "react-router-dom";
+import React from "react"
+import { Link} from "react-router-dom";
 import pic from "../images/empty.png"
 import c00 from "../images/0-anos.png"
 import c10 from "../images/10-anos.png"
